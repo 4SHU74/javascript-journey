@@ -205,62 +205,62 @@
 //   }
 // };
 
-// const mycheckbox = document.getElementById("mycheckbox");
-// const visabtn = document.getElementById("visabtn");
-// const masterbtn = document.getElementById("masterbtn");
-// const paypalbtn = document.getElementById("paypalbtn");
-// const mysubmit = document.getElementById("mysubmit");
-// const subresult = document.getElementById("subresult");
-// const paymentresult = document.getElementById("paymentresult");
+const mycheckbox = document.getElementById("mycheckbox");
+const visabtn = document.getElementById("visabtn");
+const masterbtn = document.getElementById("masterbtn");
+const paypalbtn = document.getElementById("paypalbtn");
+const mysubmit = document.getElementById("mysubmit");
+const subresult = document.getElementById("subresult");
+const paymentresult = document.getElementById("paymentresult");
 
-// mysubmit.onclick = function () {
-//   if (mycheckbox.checked) {
-//     subresult.textContent = "You are subscribed!";
-//   } else {
-//     subresult.textContent = "You are not subscribed.";
-//   }
+mysubmit.onclick = function () {
+  if (mycheckbox.checked) {
+    subresult.textContent = "You are subscribed!";
+  } else {
+    subresult.textContent = "You are not subscribed.";
+  }
 
-//   if (visabtn.checked) {
-//     paymentresult.textContent =
-//       "You have selected Visa as your payment method.";
-//   } else if (masterbtn.checked) {
-//     paymentresult.textContent =
-//       "You have selected MasterCard as your payment method.";
-//   } else if (paypalbtn.checked) {
-//     paymentresult.textContent =
-//       "You have selected PayPal as your payment method.";
-//   } else {
-//     paymentresult.textContent = "Please select a payment method.";
-//   }
-// };
+  if (visabtn.checked) {
+    paymentresult.textContent =
+      "You have selected Visa as your payment method.";
+  } else if (masterbtn.checked) {
+    paymentresult.textContent =
+      "You have selected MasterCard as your payment method.";
+  } else if (paypalbtn.checked) {
+    paymentresult.textContent =
+      "You have selected PayPal as your payment method.";
+  } else {
+    paymentresult.textContent = "Please select a payment method.";
+  }
+};
 
 // switch statments
 // so its used when you have multiple else if statements that check the same variable
 
-let day = "pizza";
+// let day = "pizza";
 
-switch (day) {
-  case 1:
-    console.log("monday");
-    break;
-  case 2:
-    console.log("tuesday");
-    break;
-  case 3:
-    console.log("wednesday");
-    break;
-  case 4:
-    console.log("thursday");
-    break;
-  case 5:
-    console.log("friday");
-    break;
-  case 6:
-    console.log("saturday");
-    break;
-  case 7:
-    console.log("sunday");
-    break;
-  default:
-    console.log(`${day} is not a day`);
-}
+// switch (day) {
+//   case 1:
+//     console.log("monday");
+//     break;
+//   case 2:
+//     console.log("tuesday");
+//     break;
+//   case 3:
+//     console.log("wednesday");
+//     break;
+//   case 4:
+//     console.log("thursday");
+//     break;
+//   case 5:
+//     console.log("friday");
+//     break;
+//   case 6:
+//     console.log("saturday");
+//     break;
+//   case 7:
+//     console.log("sunday");
+//     break;
+//   default:
+//     console.log(`${day} is not a day`);
+// }
