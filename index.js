@@ -205,6 +205,8 @@
 //   }
 // };
 
+// checkd property part 11
+
 const mycheckbox = document.getElementById("mycheckbox");
 const visabtn = document.getElementById("visabtn");
 const masterbtn = document.getElementById("masterbtn");
@@ -233,6 +235,11 @@ mysubmit.onclick = function () {
     paymentresult.textContent = "Please select a payment method.";
   }
 };
+
+// part 12 didnt write about tenary operators
+// tenary operators
+
+// part 13
 
 // switch statments
 // so its used when you have multiple else if statements that check the same variable
