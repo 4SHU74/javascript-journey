@@ -1,4 +1,4 @@
-// number guesssing game
+//  number guesssing game
 
 const minNum = 1;
 const maxNum = 100;

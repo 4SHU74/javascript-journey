@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tempreature conervsion prog</title>
+    <link rel="stylesheet" href="csx.css" />
+  </head>
+  <body>
+    <form>
+      <h1>Temperature conversion</h1>
+
+      <input type="number" id="textbox" value="0" /><br />
+
+      <input type="radio" name="unit" id="tofahrenheit" />
+      <label for="tofahrenheit">Celsius ➡️ Fahrenheit</label><br />
+
+      <input type="radio" name="unit" id="tocelsius" />
+      <label for="tocelsius"> Fahrenheit ➡️ Celsius</label><br />
+
+      <button type="button" onclick="convert()">Submit</button>
+      <p id="result"></p>
+    </form>
+    <!-- js linked -->
+    <script src="acp.js"></script>
+  </body>
+</html>
