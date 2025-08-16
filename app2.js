@@ -36,40 +36,40 @@
 
 // talking about returning values from functions
 
-function add(x, y) {
-  let sum = x + y;
+// function add(x, y) {
+//   let sum = x + y;
 
-  return sum;
-  // could also call this return x+y; shorten the one above
-}
-function subtract(x, y) {
-  return x - y;
-}
-function multiply(x, y) {
-  return x * y;
-}
-function divide(x, y) {
-  return x / y;
-}
+//   return sum;
+//   // could also call this return x+y; shorten the one above
+// }
+// function subtract(x, y) {
+//   return x - y;
+// }
+// function multiply(x, y) {
+//   return x * y;
+// }
+// function divide(x, y) {
+//   return x / y;
+// }
 
-function isEven(number) {
-  return number % 2 === 0 ? true : false;
-  // this whole line of if statemtns code about to be shorten with a ternary operator lol
-  // if (number % 2 === 0) {
-  //   return true;
-  // } else {
-  //   return false;
-  // }
-}
+// function isEven(number) {
+//   return number % 2 === 0 ? true : false;
+// this whole line of if statemtns code about to be shorten with a ternary operator lol
+// if (number % 2 === 0) {
+//   return true;
+// } else {
+//   return false;
+// }
+// }
 // function to check if an email is valid
 // a valid email contains an "@" symbol
-function isValidEmail(email) {
-  return email.includes("@") ? true : false;
-  // this is a simple way to check if an email is valid
-}
+// function isValidEmail(email) {
+//   return email.includes("@") ? true : false;
+//   // this is a simple way to check if an email is valid
+// }
 
-console.log(isValidEmail("brocode@fate.com"));
-console.log(isValidEmail("brocodefate.com"));
+// console.log(isValidEmail("brocode@fate.com"));
+// console.log(isValidEmail("brocodefate.com"));
 
 // console.log(isEven(21));
 // console.log(divide(2, 3));
@@ -78,3 +78,67 @@ console.log(isValidEmail("brocodefate.com"));
 // part 23
 // varible scope
 // read about it just watched he video
+
+// part 2
+// array in js
+// arrays are used to store multiple values in a single variable
+
+// let fruits = [`appple`, `bananna`, `orange`, `mango`];
+
+// fruits[2] = `coconunt`; // this will change the first element of the array
+
+// fruits.push(`grape`); // this will add a new element to the end of the array
+// fruits.unshift(`kiwi`); // this will add a new element to the beginning of the array
+// fruits.pop(); // this will remove the last element of the array
+// fruits.shift(); // this will remove the first element of the array
+
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+
+// let numoffruits = fruits.length; // this will give you the number of elements in the array
+// let index = fruits.indexOf(`mango`); // this will give you the index of the element in the array
+
+// fruits.sort().reverse();
+
+// for (let fruit of fruits) {
+//   console.log(fruit);
+// }
+
+// part 26
+// 2d array
+// its bascially arrays inside arrays
+// made up of rows and columns
+
+// const matrix = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+//   [`*`, 0, `#`],
+// ];
+
+// matrix[0][0] = `X`;
+// matrix[0][1] = `O`;
+// matrix[0][2] = `X`;
+
+// matrix[1][0] = `O`;
+// matrix[1][1] = `X`;
+// matrix[1][2] = `O`;
+
+// matrix[2][0] = `X`;
+// matrix[2][1] = `O`;
+// matrix[2][2] = `X`;
+
+// for (let row of matrix) {
+//   const rowString = row.join(` `);
+//   console.log(rowString);
+// }
+
+//  part 27
+// spread operators
+// spread operator is used to expand an array into its individual elements
+
+// let number = [1, 2, 3, 4, 5];
+// let maximum = Math.max(...number); // this will give you the maximum value in the array
+
+// console.log(maximum); // Output: 5
