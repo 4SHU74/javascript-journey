@@ -1,0 +1,29 @@
+/* dice roller project */
+
+#container {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgba(132, 212, 239, 0.929);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+button:hover {
+  background-color: deepskyblue;
+}
+
+input {
+  font-size: 2rem;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+}

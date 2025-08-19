@@ -135,7 +135,7 @@
 // }
 
 //  part 27
-// spread operators
+// spread operators represented by this (...)
 // spread operator is used to expand an array into its individual elements
 
 // let number = [1, 2, 3, 4, 5];
