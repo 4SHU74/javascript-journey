@@ -142,3 +142,57 @@
 // let maximum = Math.max(...number); // this will give you the maximum value in the array
 
 // console.log(maximum); // Output: 5
+
+// i have passed alot now am at part 31
+// doing callbacks
+
+// hello(leave);
+
+// function hello(callback) {
+//   console.log("hello");
+//   callback();
+// }
+// function goodbye() {
+//   console.log("goodbye!");
+// }
+// function leave() {
+//   console.log("leave!");
+// }
+// function wait() {
+//   console.log("wait!");
+// }
+
+// sum(displayPage, 1, 2);
+
+// function sum(callback, x, y) {
+//   let result = x + y;
+//   callback(result);
+// }
+
+// function displayConsole(result) {
+//   console.log(result);
+// }
+
+// function displayPage(result) {
+//   document.getElementById("h1").textContent = result;
+// }
+
+//  32 for each()
+
+let numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach(triple);
+numbers.forEach(double);
+numbers.forEach(display);
+
+function display(element) {
+  console.log(element);
+}
+
+function double(element, index, array) {
+  array[index] = element * 2;
+}
+
+function triple(element, index, array) {
+  array[index] = element * 3;
+}

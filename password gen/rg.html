@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pasword generator</title>
+    <link rel="stylesheet" href="rg.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password generator</h1>
+
+      <!-- password container  -->
+      <div class="password-container">
+        <input type="text" readonly />
+        <i class="far fa-copy" id="copy-btn" title="copy to clipboard"></i>
+
+        <!-- options -->
+        <div class="options">
+          <!-- password lenght -->
+          <div class="option">
+            <label for="lenght">Password lenght</label>
+            <div class="range-container">
+              <input type="rnage" id="length" min="" max="" value />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
