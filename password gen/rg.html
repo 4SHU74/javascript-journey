@@ -26,10 +26,42 @@
         <div class="options">
           <!-- password lenght -->
           <div class="option">
-            <label for="lenght">Password lenght</label>
+            <label for="lenght">Password length</label>
             <div class="range-container">
-              <input type="rnage" id="length" min="" max="" value />
+              <input type="range" id="length" min="6" max="24" value="12" />
+              <span id="lenght-value">12</span>
             </div>
+          </div>
+          <!-- include uppercase-->
+          <div class="option">
+            <label for="uppercase">Include uppercase</label>
+            <input type="checkbox" id="uppercase" checked />
+          </div>
+          <!-- include lowercase -->
+          <div class="option">
+            <label for="lowercase">Include lowercase</label>
+            <input type="checkbox" id="lowercase" checked />
+          </div>
+          <!-- include numbers -->
+          <div class="option">
+            <label for="numbers">Include numbers</label>
+            <input type="checkbox" id="numbers" checked />
+          </div>
+          <!-- include Symbols -->
+          <div class="option">
+            <label for="symbols">Include symbols</label>
+            <input type="checkbox" id="symbols" checked />
+          </div>
+        </div>
+
+        <button id="generate-btn">
+          <i class="fas fa-key"></i>
+          Generate Password
+        </button>
+        <div class="strength-container">
+          <p>Password strength: <span id="strong-label">medium</span></p>
+          <div class="strength-meter">
+            <div class="strength-bar"></div>
           </div>
         </div>
       </div>
