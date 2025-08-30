@@ -155,6 +155,7 @@ input[type="checkbox"] {
   cursor: pointer;
   outline: none;
   position: relative;
+  transition: 0.35s;
 }
 
 input[type="checkbox"]:checked {
@@ -169,4 +170,9 @@ input[type="checkbox"]:checked::after {
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 12px;
+}
+#length-value {
+  font-weight: 600;
+  color: var(--primary-color);
+  width: 30px;
 }
