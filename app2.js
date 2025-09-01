@@ -179,20 +179,57 @@
 
 //  32 for each()
 
-let numbers = [1, 2, 3, 4, 5];
+// let numbers = [1, 2, 3, 4, 5];
 
-numbers.forEach(triple);
-numbers.forEach(double);
-numbers.forEach(display);
+// numbers.forEach(triple);
+// numbers.forEach(double);
+// numbers.forEach(display);
 
-function display(element) {
-  console.log(element);
-}
+// function display(element) {
+//   console.log(element);
+// }
 
-function double(element, index, array) {
-  array[index] = element * 2;
-}
+// function double(element, index, array) {
+//   array[index] = element * 2;
+// }
 
-function triple(element, index, array) {
-  array[index] = element * 3;
-}
+// function triple(element, index, array) {
+//   array[index] = element * 3;
+// }
+
+// foreach is an array method will revise this later its been long tho but anyhow need to revise all my js stuff so idont forget somethings
+
+// part 33 map() array method
+
+// const numbers = [1, 2, 3, 4, 5];
+// const squares = numbers.map(square);
+// const cubes = numbers.map(cube);
+// console.log(cubes);
+
+// function square(element) {
+//   return Math.pow(element, 2);
+// }
+
+// function cube(element) {
+//   return Math.pow(element, 3);
+// }
+
+// example 2
+
+// const students = ["spongebob", "patrick", "squidward", "sandy"];
+
+// const studentsUpper = students.map(uppercase);
+// const studentsLower = students.map(lowercase);
+
+// console.log(studentsLower);
+
+// function uppercase(element) {
+//   return element.toUpperCase();
+// }
+
+// function lowercase(element) {
+//   return element.toLowerCase();
+// }
+//  done going to filter next i think this should be self explainatory bcuz its a test which ever doesnt pass wont come out in the output alright.
+
+// part 34 okay lets goooo
