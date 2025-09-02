@@ -233,3 +233,29 @@
 //  done going to filter next i think this should be self explainatory bcuz its a test which ever doesnt pass wont come out in the output alright.
 
 // part 34 okay lets goooo
+
+// example 1 done
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+// let evennumbers = numbers.filter(isEven);
+// let oddnumbers = numbers.filter(isOdd);
+
+// console.log(oddnumbers);
+
+// function isEven(element) {
+//   return element % 2 === 0;
+// }
+// function isOdd(element) {
+//   return element % 2 !== 0;
+// }
+
+// example 2
+
+// const age = [16, 17, 18, 18, 19, 20, 60];
+// const adults = age.filter(isAdult);
+
+// console.log(adults);
+
+// function isAdult(element) {
+//   return element >= 18;
+// }
