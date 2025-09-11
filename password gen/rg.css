@@ -70,7 +70,7 @@ h1::after {
   border: 1px solid #e2e8f0;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: space-between;
 
@@ -174,4 +174,61 @@ input[type="checkbox"]:checked::after {
   font-weight: 600;
   color: var(--primary-color);
   width: 30px;
+  text-align: center;
+  background: #e2e8f0;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border-radius: 10px;
+  border: none;
+  color: #e2e8f0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(43, 88, 118, 0.2);
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+button:active {
+  transform: translateY(0);
+}
+
+.strength-container {
+  margin-top: 0.8rem;
+}
+
+.strength-container p {
+  font-size: 0.9rem;
+  color: #4a5568;
+  margin-bottom: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+#strenght-label {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.strength-meter {
+  height: 10px;
+  background-color: #edf2f7;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(43, 88, 118, 0.2);
 }

@@ -238,7 +238,7 @@ mysubmit.onclick = function () {
 
 // part 12 didnt write about tenary operators
 // tenary operators
-
+//  ? = when , : = else
 // part 13
 
 // switch statments

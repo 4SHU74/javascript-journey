@@ -46,20 +46,70 @@
 
 // another example
 
-const numbers = [1, 2, 3, 4, 5, 6];
-const doubles = numbers.map(function (element) {
-  return Math.pow(element, 2);
-});
-const cubes = numbers.map(function (element) {
-  return Math.pow(element, 3);
-});
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const doubles = numbers.map(function (element) {
+//   return Math.pow(element, 2);
+// });
+// const cubes = numbers.map(function (element) {
+//   return Math.pow(element, 3);
+// });
 
-const evenNums = numbers.filter(function (element) {
-  return element % 2 === 0;
-});
+// const evenNums = numbers.filter(function (element) {
+//   return element % 2 === 0;
+// });
 
-const oddNums = numbers.filter(function (element) {
-  return element % 2 !== 0;
-});
+// const oddNums = numbers.filter(function (element) {
+//   return element % 2 !== 0;
+// });
 
-console.log(oddNums);
+// console.log(oddNums);
+
+// part 37
+// arrow functions
+
+// const hello = (name, age) => {
+//   console.log(`hello ${name}`);
+//   console.log(`you are ${age} years old`);
+// };
+// hello("john", 25);
+
+// example 2
+
+// setTimeout(() => console.log(`hello`), 3000);
+
+// example 3
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const doubles = numbers.map((element) => Math.pow(element, 2));
+
+// console.log(doubles);
+
+// part 38
+//  object
+
+// const person1 = {
+//   name: "john",
+//   surname: "doe",
+//   age: 30,
+//   isemployed: true,
+//   sayhello: function () {
+//     console.log("hello");
+//   },
+// };
+
+// const person2 = {
+//   name: "jane",
+//   surname: "doe",
+//   age: 25,
+//   isemployed: false,
+// };
+
+// console.log(person1.name);
+// console.log(person1.surname);
+// console.log(person2.age);
+// console.log(person2.isemployed);
+
+// person1.sayhello();
+
+// part 39
+// this keyword
