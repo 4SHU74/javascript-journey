@@ -113,3 +113,78 @@
 
 // part 39
 // this keyword
+//  can say its a reference to the current object or object method
+
+// const person1 = {
+//   name: "spongebob",
+//   favfood: "krabby patty",
+//   sayhello: function () {
+//     console.log(`hello there ${this.name}`);
+//   },
+//   eat: function () {
+//     console.log(`${this.name} is eating ${this.favfood}`);
+//   },
+// };
+
+// const person2 = {
+//   name: "patrick",
+//   favfood: "pizza",
+//   sayhello: function () {
+//     console.log(`hello there ${this.name}`);
+//   },
+//   eat: function () {
+//     console.log(`${this.name} is eating ${this.favfood}`);
+//   },
+// };
+
+// person1.eat();
+// person2.eat();
+
+// part 40
+// constructors
+
+// const car1 = {
+//   make: "ford",
+//   model: "mustang",
+//   year: 2000,
+//   color: "red",
+//   drive: function () {
+//     console.log(`you drive ${this.model}`);
+//   },
+// };
+// const car2 = {
+//   make: "chevrolet",
+//   model: "camaro",
+//   year: 2003,
+//   color: "blue",
+//   drive: function () {
+//     console.log(`you drive ${this.model}`);
+//   },
+// };
+
+// const car3 = {
+//   make: "dodge",
+//   model: "charger",
+//   year: 20010,
+//   color: "silver",
+//   drive: function () {
+//     console.log(`you drive ${this.model}`);
+//   },
+// };
+
+// console.log(car3.year);
+// car3.drive();
+// this is really bad practice to create multiple objects like this
+// instead we use constructors
+// note i think i know thats this  topic
+
+// the on top was showing us why doing the multiple object is bad practice
+
+// this example now will be with the contructor
+
+function Car(make, model, year, color) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+  this.color = color;
+}
