@@ -223,7 +223,7 @@ button:active {
   margin-bottom: 0.6rem;
   display: flex;
   justify-content: space-between;
-  font-weight: 500;
+  font-weight: 525;
 }
 
 #strenght-label {
@@ -250,7 +250,7 @@ button:active {
   border-radius: 5px;
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .container {
     padding: 1.8rem;
     width: 95%;
@@ -261,5 +261,85 @@ button:active {
   }
   .option label {
     font-size: 0.9rem;
+  }
+} */
+
+/* adding reponsiveness */
+/* Small phones (portrait) */
+@media (max-width: 300px) {
+  .container {
+    padding: 1.2rem;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  #password {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+
+  .options {
+    padding: 1rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+}
+
+/* Tablets (iPad portrait + landscape) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .container {
+    max-width: 600px;
+    padding: 2.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .option label {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 1.2rem;
+  }
+}
+
+/* Laptops / Desktops (wider screens) */
+@media (min-width: 1025px) {
+  .container {
+    max-width: 700px;
+    padding: 3rem 4rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  #password {
+    font-size: 1rem;
+  }
+
+  .options {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; two-column layout for checkboxes */
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  .option {
+    margin-bottom: 0.8rem;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
   }
 }
