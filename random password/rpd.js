@@ -51,3 +51,7 @@ const password = generatePassword(
 );
 
 console.log(`generated password: ${password}`);
+
+if (a !== b && c >= d) {
+  console.log("Test => Passed");
+}
