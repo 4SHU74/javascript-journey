@@ -1,6 +1,6 @@
 {
   "editor.allowVariableFontsInAccessibilityMode": false,
-  "editor.fontSize": 15,
+  "editor.fontSize": 13,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.wordWrap": "on",
   "editor.tabSize": 2,
@@ -17,8 +17,8 @@
   "workbench.editor.empty.hint": "hidden",
   "workbench.colorTheme": "Tokyo Night AltSynt",
   "diffEditor.hideUnchangedRegions.enabled": true,
-  "editor.fontFamily": "Fira Code, 'JetBrains Mono', monospace",
+  "editor.fontFamily": "'JetBrains Mono', monospace",
   "editor.lineHeight": 22,
-  "editor.letterSpacing": 0.3,
+  "editor.letterSpacing": 0.5,
   "editor.fontLigatures": true
 }
