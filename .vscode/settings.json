@@ -17,7 +17,7 @@
   "workbench.editor.empty.hint": "hidden",
   "workbench.colorTheme": "Tokyo Night AltSynt",
   "diffEditor.hideUnchangedRegions.enabled": true,
-  "editor.fontFamily": "'JetBrains Mono', monospace",
+  "editor.fontFamily": "'JetBrains Mono','Fira Code', monospace",
   "editor.lineHeight": 22,
   "editor.letterSpacing": 0.5,
   "editor.fontLigatures": true
