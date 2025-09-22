@@ -182,9 +182,30 @@
 
 // this example now will be with the contructor
 
-function Car(make, model, year, color) {
-  this.make = make;
-  this.model = model;
-  this.year = year;
-  this.color = color;
+// function Car(make, model, year, color) {
+//   this.make = make;
+//   this.model = model;
+//   this.year = year;
+//   this.color = color;
+// }
+
+//  classes part 41
+
+// classes = provides a more structured and cleaner way to work with objects compared to traditional constructor functions.
+// eg like static keyword, encapsulation,inheritance.
+
+class Product {
+  constructor(name, price) {
+    this.name = name;
+    this.price = price;
+  }
+  displayproduct() {
+    console.log(`product : ${this.name}`);
+    console.log(`price: ${this.price}`);
+  }
 }
+
+const product1 = new Product("shirt", 91.99);
+const product2 = new Product("pants", 91.99);
+
+product2.displayproduct();
