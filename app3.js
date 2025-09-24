@@ -194,18 +194,43 @@
 // classes = provides a more structured and cleaner way to work with objects compared to traditional constructor functions.
 // eg like static keyword, encapsulation,inheritance.
 
-class Product {
-  constructor(name, price) {
+// class Product {
+//   constructor(name, price) {
+//     this.name = name;
+//     this.price = price;
+//   }
+//   displayproduct() {
+//     console.log(`product : ${this.name}`);
+//     console.log(`price: ${this.price}`);
+//   }
+// }
+
+// const product1 = new Product("shirt", 91.99);
+// const product2 = new Product("pants", 91.99);
+
+// product2.displayproduct();
+
+class FootballClub {
+  constructor(name, goals = 0) {
     this.name = name;
-    this.price = price;
+    this.goals = goals;
   }
-  displayproduct() {
-    console.log(`product : ${this.name}`);
-    console.log(`price: ${this.price}`);
+
+  score() {
+    this.goals += 1;
   }
 }
 
-const product1 = new Product("shirt", 91.99);
-const product2 = new Product("pants", 91.99);
+const showResult = (club1, club2) => {
+  console.log(`${club1.name} ${club1.goals} - ${club2.goals} ${club2.name}`);
+};
 
-product2.displayproduct();
+const psg = new FootballClub(`PSG`);
+const realMadrid = new FootballClub(`Real Madrid`);
+
+psg.score();
+realMadrid.score();
+psg.score();
+psg.score();
+psg.score();
+showResult(psg, realMadrid);
