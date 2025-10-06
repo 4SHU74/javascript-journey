@@ -339,41 +339,94 @@
 // console.log(rectangle.height);
 
 // now this is it with set
-class Rectangle {
-  constructor(width, height) {
-    this.width = width;
-    this.height = height;
-  }
-  set width(newWidth) {
-    if (newWidth > 0) {
-      this._width = newWidth;
-    } else {
-      console.error(`width must be a postive number`);
-    }
-  }
-  set height(newHeight) {
-    if (newHeight > 0) {
-      this._height = newHeight;
-    } else {
-      console.error(`height must be a postive number`);
-    }
-  }
+// class Rectangle {
+//   constructor(width, height) {
+//     this.width = width;
+//     this.height = height;
+//   }
+//   set width(newWidth) {
+//     if (newWidth > 0) {
+//       this._width = newWidth;
+//     } else {
+//       console.error(`width must be a postive number`);
+//     }
+//   }
+//   set height(newHeight) {
+//     if (newHeight > 0) {
+//       this._height = newHeight;
+//     } else {
+//       console.error(`height must be a postive number`);
+//     }
+//   }
 
-  get width() {
-    return this._width;
-  }
-  get height() {
-    return this._height;
-  }
-  get area() {
-    return this._width * this._height;
-  }
-}
+//   get width() {
+//     return this._width;
+//   }
+//   get height() {
+//     return this._height;
+//   }
+//   get area() {
+//     return this._width * this._height;
+//   }
+// }
 
-const rectangle = new Rectangle(10000, 20);
+// const rectangle = new Rectangle(10000, 20);
 
-console.log(rectangle.width);
-console.log(rectangle.height);
-console.log(rectangle.area);
+// console.log(rectangle.width);
+// console.log(rectangle.height);
+// console.log(rectangle.area);
 
 //  fisrt example done
+
+// class person {
+//   constructor(firstName, lastName, age) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
+//   }
+
+//   set firstName(newFirstName) {
+//     if (typeof newFirstName === `string` && newFirstName.length > 0) {
+//       this._firstName = newFirstName;
+//     } else {
+//       console.error(`first name must not be an empty string`);
+//     }
+//   }
+
+//   set lastName(newLastName) {
+//     if (typeof newLastName === `string` && newLastName.length > 0) {
+//       this._lastName = newLastName;
+//     } else {
+//       console.error(`last name must not be an empty string`);
+//     }
+//   }
+//   set age(newAge) {
+//     if (typeof newAge === `number` && newAge >= 0) {
+//       this._age = newAge;
+//     } else {
+//       console.error(`age must not be a negatuve number`);
+//     }
+//   }
+
+// get firstName() {
+//   return this._firstName;
+// }
+// get lastName() {
+//   return this._lastName;
+// }
+// get fullName() {
+//   return this._firstName + " " + this._lastName;
+// }
+// get age() {
+//   return this._age;
+// }
+// }
+
+// const Person = new person(`james`, `heller`, 40);
+
+// console.log(Person.firstName);
+// console.log(Person.lastName);
+// console.log(Person.fullName);
+// console.log(Person.age);
+
+// part 46
