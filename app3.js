@@ -210,27 +210,170 @@
 
 // product2.displayproduct();
 
-class FootballClub {
-  constructor(name, goals = 0) {
-    this.name = name;
-    this.goals = goals;
+// class FootballClub {
+//   constructor(name, goals = 0) {
+//     this.name = name;
+//     this.goals = goals;
+//   }
+
+//   score() {
+//     this.goals += 1;
+//   }
+// }
+
+// const showResult = (club1, club2) => {
+//   console.log(`${club1.name} ${club1.goals} - ${club2.goals} ${club2.name}`);
+// };
+
+// const psg = new FootballClub(`PSG`);
+// const realMadrid = new FootballClub(`Real Madrid`);
+
+// psg.score();
+// realMadrid.score();
+// psg.score();
+// psg.score();
+// psg.score();
+// showResult(psg, realMadrid);
+
+// part 42
+// static method in classes
+
+// part 43
+// inheritance
+// lets go its the process where by the child class can inherit or extend or have the parent properties.
+
+// class animal {
+//   alive = true;
+
+//   eat() {
+//     console.log(`this ${this.name} is eating`);
+//   }
+//   sleeping() {
+//     console.log(`this ${this.name} is sleeping`);
+//   }
+// }
+
+// class Rabbit extends animal {
+//   name = "rabbit";
+
+//   hop() {
+//     console.log(`this ${this.name} is hopping`);
+//   }
+// }
+// class Fish extends animal {
+//   name = "fish";
+
+//   swim() {
+//     console.log(`this ${this.name} is swimming`);
+//   }
+// }
+// class Hawk extends animal {
+//   name = "hawk";
+
+//   fly() {
+//     console.log(`this ${this.name} is flying`);
+//   }
+// }
+
+// const rabbit = new Rabbit();
+// const fish = new Fish();
+// const hawk = new Hawk();
+
+// console.log(hawk.alive);
+// fish.sleeping();
+// fish.eat();
+// hawk.swim();
+// hawk.hop();
+// rabbit.fly();
+
+//  paart 44 is super
+// super
+// it means the parent class of the inheritance lol dont undertsand more than this or that would do more research but for now thats all i have.
+
+//  note am comoing back to this lets go back to static lol
+
+//  part 45
+//  get and set
+// get is to access property
+// set is asign a value to a property
+
+// class person {
+//   constructor(first, last) {
+//     this.first = first;
+//     this.last = last;
+//   }
+
+//   get fullName() {
+//     return `${this.first} ${this.last}`;
+//   }
+//   set fullName(newName) {
+//     if (!newName) {
+//       throw "boooo fuck u men write something";
+//     }
+//     const [first, last] = newName.split("");
+//     this.first = first;
+//     this.last = last;
+//   }
+// }
+// const actor = new person("Bredan", "fraser");
+
+// console.log(actor.fullName);
+// actor.first = "colt";
+
+// console.log(actor.fullName);
+
+// actor.fullName = "tim colt";
+
+//  another example for get and set from bro code
+// set one showing us what it looks like with out using set note this is set first example
+// class Rectangle {
+//   constructor(width, height) {
+//     this.width = width;
+//     this.height = height;
+//   }
+// }
+
+// const rectangle = new Rectangle(-10000, `pizza`);
+
+// console.log(rectangle.width);
+// console.log(rectangle.height);
+
+// now this is it with set
+class Rectangle {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+  set width(newWidth) {
+    if (newWidth > 0) {
+      this._width = newWidth;
+    } else {
+      console.error(`width must be a postive number`);
+    }
+  }
+  set height(newHeight) {
+    if (newHeight > 0) {
+      this._height = newHeight;
+    } else {
+      console.error(`height must be a postive number`);
+    }
   }
 
-  score() {
-    this.goals += 1;
+  get width() {
+    return this._width;
+  }
+  get height() {
+    return this._height;
+  }
+  get area() {
+    return this._width * this._height;
   }
 }
 
-const showResult = (club1, club2) => {
-  console.log(`${club1.name} ${club1.goals} - ${club2.goals} ${club2.name}`);
-};
+const rectangle = new Rectangle(10000, 20);
 
-const psg = new FootballClub(`PSG`);
-const realMadrid = new FootballClub(`Real Madrid`);
+console.log(rectangle.width);
+console.log(rectangle.height);
+console.log(rectangle.area);
 
-psg.score();
-realMadrid.score();
-psg.score();
-psg.score();
-psg.score();
-showResult(psg, realMadrid);
+//  fisrt example done
