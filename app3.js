@@ -430,3 +430,195 @@
 // console.log(Person.age);
 
 // part 46
+
+// destructuring in js
+//  destructuring =  extract values from arrays and objects,
+//  then assign them to variables in a convenient way
+//  [] = to perform array destructuring
+//  {} = to perform object destructuring
+//  with 5 examples
+
+//  NO 1
+// swap value of 2 variables
+
+// let a = 1;
+// let b = 2;
+
+// [a, b] = [b, a];
+
+// console.log(a);
+// console.log(b);
+
+// NO 2
+// swap 2 elements in an array
+// const colors = [`red`, `green`, `blue`, `black`, `white`];
+
+// [colors[0], colors[4]] = [colors[4], colors[0]];
+
+// console.log(colors);
+
+// NO 3
+// assign array elements to variables
+
+// const colors = [`red`, `green`, `blue`, `black`, `white`];
+
+// const [firstcolor, secondccolor, thirdcolor] = colors;
+
+// console.log(thirdcolor);
+
+// NO 4
+//extract values from objects
+
+// const person1 = {
+//   firstname: `james`,
+//   lastname: `heller`,
+//   age: 29,
+//   job: `exterminator`,
+// };
+
+// const person2 = {
+//   firstname: `alex`,
+//   lastname: `mercer`,
+//   age: 50,
+// };
+
+// const { firstname, lastname, age, job = `unemployed` } = person2;
+
+// console.log(job);
+
+// No 5
+// destructure in function parameters
+
+// const person1 = {
+//   firstname: `james`,
+//   lastname: `heller`,
+//   age: 29,
+//   job: `exterminator`,
+// };
+
+// const person2 = {
+//   firstname: `alex`,
+//   lastname: `mercer`,
+//   age: 50,
+// };
+
+// omo cant rember what i did here 1 week of doing nothing in js but wishing i was in javascript its well
+
+//  so we going to the next ones god help me na die i dey lol
+//  need to study some few things and try and read more codes
+
+//  need to look into nested objects tho i understand it , array of objects, sorting , and shuffle so those are what to study later this week saturday
+
+// now part 51
+//  dates in js
+
+//  we could add arguments date(year,month,day,hour,minute,second,ms)
+// const date = new Date(2026, 0, 2, 4, 5, 6, 6);
+
+// console.log(date);
+
+//  round it up abeg
+
+//  part 52
+
+// closure = A function defined inside of another function,
+//  the inner function has access to the variables
+//   and scope of the outer function.
+// Allow for private variables and state maintenance
+//  Used frequently in JS frameworks: React, Vue, Angular
+
+// function outer() {
+//   let message = `hello`;
+
+//   function inner() {
+//     console.log(message);
+//   }
+//   inner();
+// }
+
+// outer();
+
+// 2nd example
+
+// function creatcounter() {
+//   let count = 0;
+//   function increment() {
+//     count++;
+//     console.log(`count increase by ${count}`);
+//   }
+
+//   function getcount() {
+//     return count;
+//   }
+
+//   return { increment, getcount };
+// }
+
+// const counter = creatcounter();
+
+// counter.increment();
+// counter.increment();
+// counter.increment();
+// counter.increment();
+// counter.increment();
+// counter.increment();
+// counter.increment();
+
+// console.log(`the count is now ${counter.getcount()}`);
+
+// 3rd example
+
+// function creategame() {
+//   let score = 0;
+
+//   function increaseScore(points) {
+//     score += points;
+//     console.log(`+${points}pts`);
+//   }
+
+//   function decreaseScore(points) {
+//     score -= points;
+//     console.log(`-${points}pts`);
+//   }
+
+//   function getScore() {
+//     return score;
+//   }
+//   return { increaseScore, decreaseScore, getScore };
+// }
+
+// const game = creategame();
+// game.increaseScore(5);
+// game.increaseScore(7);
+// game.decreaseScore(9);
+
+// console.log(`the final score is ${game.getScore()}pts`);
+
+// done
+
+// part 53
+
+// setTimeout() = function in JavaScript that allows you to schedule
+//     the execution of a function after an amount of time
+//     Times are approximate
+//     setTimeout(callback, delay);
+
+// example 1
+
+// function sayhello() {
+//   window.alert("hello");
+// }
+
+// setTimeout(sayhello, 5000);
+
+// example 2
+
+// setTimeout(function () {
+//   window.alert(`hello`);
+// }, 5000);
+
+// example 3
+// canceled it while showing how to set the time out with arrow function
+const timeoutId = setTimeout(() => window.alert(`hello`), 5000);
+
+clearTimeout(timeoutId);
