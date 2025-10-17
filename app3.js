@@ -619,6 +619,6 @@
 
 // example 3
 // canceled it while showing how to set the time out with arrow function
-const timeoutId = setTimeout(() => window.alert(`hello`), 5000);
+// const timeoutId = setTimeout(() => window.alert(`hello`), 5000);
 
-clearTimeout(timeoutId);
+// clearTimeout(timeoutId);
