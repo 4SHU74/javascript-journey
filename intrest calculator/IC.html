@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>intrest calculator</title>
+    <link rel="stylesheet" href="IC.css" />
+    <!-- linked to css ic  -->
+  </head>
+  <body>
+    <h1>Intrest calculator</h1>
+
+    <form>
+      <label for="principal">Principal Amount: </label>
+      <input type="number" id="principal" />
+
+      <label for="rate">Intrest Rate: </label>
+      <input type="number" id="rate" />
+
+      <label for="years">Years : </label>
+      <input type="number" id="years" />
+
+      <button onclick="calculate()">submit</button>
+    </form>
+
+    <p id="total">Total: <span id="total amount">$0.00</span></p>
+
+    <!-- js is linked -->
+    <script src="IC.js"></script>
+  </body>
+</html>
