@@ -622,3 +622,5 @@
 // const timeoutId = setTimeout(() => window.alert(`hello`), 5000);
 
 // clearTimeout(timeoutId);
+
+//  think am done here this is getting too long lol should have made every topic in a seperate folder or file fuck

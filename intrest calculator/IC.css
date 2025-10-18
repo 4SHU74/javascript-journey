@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: hsl(0, 0%, 95%);
+}
+h1 {
+  color: hsl(0, 0%, 30%);
+  font-size: 3em;
+  text-align: center;
+}
+form {
+  background-color: white;
+  max-width: 350px;
+  margin: auto;
+  padding: 25px;
+}
