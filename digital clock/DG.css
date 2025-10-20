@@ -1,1 +1,23 @@
 /* digital clock */
+body {
+  background-image: url(ed8ccf931941eadb9d5c9b432c99d373.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+}
+#clock-container {
+  display: flex;
+  justify-content: center;
+
+  height: 100vh;
+  border: 2px solid;
+}
+#clock {
+  margin-top: 90px;
+  font: monospace;
+  font-size: 6.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: aliceblue;
+  /* backdrop-filter: blur(20px); */
+}
