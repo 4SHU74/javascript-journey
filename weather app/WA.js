@@ -33,10 +33,21 @@ async function getWeatherData(city) {
     throw new Error("could not fetch weather data");
   }
 
-  retrun await response.json();
+  return await response.json();
 }
 
-async function displayWeatherInfo(data) {}
+async function displayWeatherInfo(data) {
+  const {
+    name: city,
+    main: { temp, humidity },
+    weather: [{ description, id }],
+  } = data;
+
+  card.textContent = "";
+  card.style.display = "flex";
+
+  const cityDisplay = document.createElement();
+}
 
 async function GetWeatherEmoji(weatherId) {}
 
