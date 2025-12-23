@@ -75,3 +75,55 @@ p {
   font-weight: bold;
   color: hsla(0, 6%, 10%, 0.459);
 }
+/* Base styles already in your WA.css stay as-is */
+
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .weatherform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .cityinput {
+    width: 90%;
+    font-size: 1.5rem;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  button[type="submit"] {
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    border-radius: 15px;
+  }
+
+  .card {
+    padding: 30px 20px;
+    min-width: 90%;
+  }
+
+  h1.citydisplay,
+  p.tempdisplay {
+    font-size: 2rem;
+  }
+
+  .humiditydisplay,
+  .descdisplay {
+    font-size: 1.2rem;
+  }
+
+  .weatheremoji {
+    font-size: 5rem;
+    margin: 10px 0;
+  }
+
+  .errordisplay {
+    font-size: 1.8rem;
+  }
+}
