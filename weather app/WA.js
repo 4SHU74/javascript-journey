@@ -46,10 +46,47 @@ async function displayWeatherInfo(data) {
   card.textContent = "";
   card.style.display = "flex";
 
-  const cityDisplay = document.createElement();
+  const citydisplay = document.createElement("h1");
+  const tempdisplay = document.createElement("p");
+  const humiditydisplay = document.createElement("p");
+  const descdisplay = document.createElement("p");
+  const weatheremoji = document.createElement("p");
+
+  citydisplay.textContent = city;
+  tempdisplay.textContent = `${temp}K`;
+  humiditydisplay.textContent = `Humidity : ${humidity}%`;
+  descdisplay.textContent = description;
+  weatheremoji.textContent = GetWeatherEmoji(id);
+
+  citydisplay.classList.add("citydisplay");
+  tempdisplay.classList.add("tempdisplay");
+  humiditydisplay.classList.add("humiditydisplay");
+  descdisplay.classList.add("descdisplay");
+  weatheremoji.classList.add("weatherEmoji");
+
+  card.appendChild(citydisplay);
+  card.appendChild(tempdisplay);
+  card.appendChild(humiditydisplay);
+  card.appendChild(descdisplay);
+  card.appendChild(weatheremoji);
 }
 
-async function GetWeatherEmoji(weatherId) {}
+async function GetWeatherEmoji(weatherId) {
+  switch (true) {
+    case weatherId >= 200 && weatherId < 300:
+      return "⛈️";
+    case weatherId >= 300 && weatherId < 400:
+      return "⛈️";
+    case weatherId >= 500 && weatherId < 600:
+      return "⛈️";
+    case weatherId >= 600 && weatherId < 700:
+      return "⛈️";
+    case weatherId >= 700 && weatherId < 800:
+      return "⛈️";
+    case weatherId === 800:
+      return "☀️";
+  }
+}
 
 async function displayError(message) {
   const errordisplay = document.createElement("p");
